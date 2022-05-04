@@ -1,16 +1,16 @@
 body {
     background-color: # F3F9E3, white;
     font-family: "Roboto"
+    color: grey, black ;
 }
 h1 {
-    color: grey, black;
     font-size: larger;
     margin: auto;
     text-transform: uppercase;
 }
 .ball {
     border-radius: 50%;
-    width: 50%;
-    height: 80%;
-    background-image: linear-gradient(38deg,#F038FF, #DBFCFF);
+    width: 100px;
+    height: 100px;
+    background-image: linear-gradient(45deg,#F038FF, #DBFCFF);
 }
