@@ -1,5 +1,6 @@
 body {
-    background-color: #F3F9E3, white;
+    /* #F3F9E3 */
+    background-color: green, white;
     font-family: monospace, 'Courier New', Courier, monospace;
     color: grey, black;
     margin-left: auto;
