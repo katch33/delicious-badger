@@ -1,6 +1,6 @@
 body {
     /* #F3F9E3 */
-    background-color: green, white;
+    background-color: white;
     font-family: monospace, 'Courier New', Courier, monospace;
     color: grey, black;
     text-align: justify;
@@ -8,17 +8,53 @@ body {
 h1 {
     font-size: 27px;
     text-transform: uppercase;
+    
 }
 .ball {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-color: purple;
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     background-image: linear-gradient(45deg,#F038FF, #DBFCFF);
 }
 
-p {
-    width: 75%;
-    min-width: 75%;
-    background-color: linear-gradient(45deg,#F038FF, #DBFCFF);
+.card {
+    background-image: linear-gradient(45deg,#F038FF, #DBFCFF);
     color: black;
+    border-width: 20px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
+    width: 50%;
+    padding: 25px 50px 25px 50px;
+    margin: auto;
+}
+
+p {
+    text-align: center;
+}
+
+.rainbow-text {
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+a:hover {
+    color: white;
+}
+
+.oldblog {
+    padding: 25px;
+    margin-top: 50px;
+    border-style: dashed;
+    border-width: 10px;
+    border-color: black;
+    color: black;
+    width: 50%;
+    margin: auto;
 }
