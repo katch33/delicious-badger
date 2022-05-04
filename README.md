@@ -8,7 +8,7 @@ Below you will find links to my itch.io page, my youtube channel and a link
 to join Mastodon, a de-centralised micro-blogging platform spread over many  
 servers/instances.
 
-* [itch.io](http://k33.itchi.io)
+* [itch.io](http://k33.itch.io)
 * [youtube](https://www.youtube.com/channel/UCLEU6UC8uEAObLFFfsosbPw)
 * [mastodon](https://joinmastodon.org/)
 k33 @ mastodon.gamedev.place is my username
