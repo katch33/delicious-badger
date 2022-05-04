@@ -1,7 +1,6 @@
-# katch33 / Martin  
-
-This website is a static journal page for me to track my game design work.  
-I have written the site in markdown and hosted it on my github to provide  
+My name is katch33/Martin and his website is a static journal page  
+for me to track my game design work. I have written the site in  
+markdown and hosted it on my github to provide  
 a simple clean way of having everything centralised.
 ----
 Below you will find links to my itch.io page, my youtube channel and a link  
