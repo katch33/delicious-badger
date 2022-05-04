@@ -4,8 +4,7 @@ body {
     color: grey, black ;
 }
 h1 {
-    font-size: larger;
-    margin: auto;
+    font-size: 27px;
     text-transform: uppercase;
 }
 .ball {
