@@ -1,3 +1,22 @@
+This page contains readme documentation for my personal website. It's goals, technology and construction are described here and any attributions regarding reused code or any other content not created by me. The section at the bottom (marked historical) contains the original layout and markdown for the site, as it was originally intended to be a markdown only site. As my ability to code has grown so has my desire to create a better personal website.
+
+## Goals
+- showcase my coding ability
+- provide a point of contact
+- be a living document tht changes as my skill improves
+- links to my other work in games
+- links to my social media
+
+## Construction and technology
+This website will be built exclusively with HTML and CSS. It will be hosted on GitHub pages and I use gitpod as my IDE.
+
+## Attributions
+Currently the website doesn't contain any images or code from other people.
+----
+----
+## historical-content-below
+----
+----
 My name is katch33/Martin and his website is a static journal page  
 for me to track my game design work. I have written the site in  
 markdown and hosted it on my github to provide  
