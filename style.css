@@ -1,138 +1,88 @@
-body {
-    /* #F3F9E3 */
-    background-image: linear-gradient(180deg, pink, white);
-    font-family: monospace, 'Courier New', Courier, monospace;
-    color: grey, black;
-    /* font-size: larger; */
-    word-wrap: break-word;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-h1 {
+body {
+    background-color: #2EC4B6;
+    font-family: Arial, Helvetica, sans-serif;
+    color: 011627;
+    height: 100vh;
+    font-size: 16px;
+    word-break: normal;
+}
+
+[class ^= "box-"] {
+    display: grid;
+    place-items: center;
+    /* border: solid 5px orangered; */
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px
+    rgba(0,0,0,.1);
+  }
+
+.container {
+    display: grid;
+    width: 95vw;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin: 20px auto;
+}
+
+.box-me {
+    grid-column: 1 / 4;
+
     font-size: 45px;
     text-transform: uppercase;
-    text-align: center;
-    color: black;
+    letter-spacing: 1.5ch;
+    
 }
 
-.h3 {
+.box-hdrinfo {
+    grid-column: 1/4;
+}
+
+.box-mine {
+    grid-column: 1/2;
+    background-color: #20A4F3;
+}
+
+.box-tools {
+    grid-column: 2/3;
+    background-color: #F6F7F8;
+}
+
+.box-learn {
+    grid-column: 3/4;
+}
+
+.box-blog {
+    grid-column: 1/4;
+    text-align: justify;
+}
+
+h4 {
     text-decoration: underline;
-    margin-bottom: 0px;
+    font-weight: bold;
 }
 
-.ball {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-color: purple;
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    background-image: linear-gradient(45deg, #F038FF, #DBFCFF);
+.box-warning {
+    grid-column: 1 / 4;
+    
+    text-decoration: overline;
+    text-decoration: underline;
+    
+    text-decoration-color: #FF3366;
+    text-transform: uppercase;
+    
+    background-color: grey;
+    color:
+    
+    border: dashed 5px yellow;
 }
 
-.card {
-    text-align: justify;
-    width: 100vw;
-    background-image: linear-gradient(45deg, #F038FF, #DBFCFF);
-    color: black;
-
-    border-top-width: 10px;
-    border-bottom-width: 10px;
-    border-style: solid;
-    border-color: black;
-}
-
-a:hover {
-    color: violet;
-
-}
-
-.blog {
-    text-align: justify;
-}
-
-.oldblog {
-    padding: 0 15px;
-    margin-top: 50px;
-    border-top-style: dashed;
-    border-top-width: 10px;
-    border-color: grey;
-    background: black;
-    color: white;
-    width: 90%;
-    margin: auto;
-}
-
-@media (min-width:990px) {
-    body {
-        /* #F3F9E3 */
-        background-image: linear-gradient(180deg, pink, white);
-        font-family: monospace, 'Courier New', Courier, monospace;
-        color: grey, black;
-        margin-left: 25%;
-        margin-right: 25%;
-        /* font-size: larger; */
-        word-wrap: break-word;
-    }
-
-    h1 {
-        font-size: 45px;
-        text-transform: uppercase;
-        text-align: center;
-        color: black;
-    }
-
-    .h3 {
-        text-decoration: underline;
-        margin-bottom: 0px;
-    }
-
-    .ball {
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        border-color: purple;
-        border-radius: 50%;
-        width: 150px;
-        height: 150px;
-        background-image: linear-gradient(45deg, #F038FF, #DBFCFF);
-    }
-
-    .card {
-        text-align: justify;
-
-        width: 60%;
-        padding: 25px 50px 25px 50px;
-        margin: auto;
-
-        background-image: linear-gradient(45deg, #F038FF, #DBFCFF);
-        color: black;
-
-        border-width: 10px;
-        border-style: solid;
-        border-color: black;
-        border-radius: 20px;
-    }
-
-    a:hover {
-        color: violet;
-
-    }
-
-    .blog {
-        text-align: justify;
-    }
-
-    .oldblog {
-        padding: 15px;
-        margin-top: 50px;
-        border-style: dashed;
-        border-width: 10px;
-        border-color: black;
-        color: black;
-        width: 75%;
-        margin: auto;
-    }
+.box-oldblog {
+    grid-column: 1 / 4;
 }
