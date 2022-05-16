@@ -5,84 +5,43 @@
 }
 
 body {
-    background-color: #2EC4B6;
-    font-family: Arial, Helvetica, sans-serif;
-    color: 011627;
-    height: 100vh;
+    background-color: #FFB7FF;
+    font-family: monospace;
+    color: #011627;
     font-size: 16px;
-    word-break: normal;
+    border: solid 2px red;
 }
 
 [class ^= "box-"] {
     display: grid;
     place-items: center;
-    /* border: solid 5px orangered; */
-    padding: 10px;
+    border: solid 2px orangered;
     border-radius: 20px;
     box-shadow: 0 0 5px
     rgba(0,0,0,.1);
+    max-width: 100vw;
   }
 
 .container {
     display: grid;
-    width: 95vw;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
-    margin: 20px auto;
+    grid-template-columns: 1fr;
+    max-width: 100vw;
 }
 
-.box-me {
-    grid-column: 1 / 4;
-
-    font-size: 45px;
-    text-transform: uppercase;
-    letter-spacing: 1.5ch;
-    
-}
-
-.box-hdrinfo {
-    grid-column: 1/4;
-}
-
-.box-mine {
-    grid-column: 1/2;
-    background-color: #20A4F3;
-}
-
-.box-tools {
-    grid-column: 2/3;
-    background-color: #F6F7F8;
-}
-
-.box-learn {
-    grid-column: 3/4;
-}
-
-.box-blog {
-    grid-column: 1/4;
+.box-intro {
     text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: black;
+    color: white;
 }
 
-h4 {
-    text-decoration: underline;
-    font-weight: bold;
-}
-
-.box-warning {
-    grid-column: 1 / 4;
-    
-    text-decoration: overline;
-    text-decoration: underline;
-    
-    text-decoration-color: #FF3366;
+#logo {
+    color: white;
     text-transform: uppercase;
-    
-    background-color: grey;
-    color:
-    
-    border: dashed 5px yellow;
-}
-
-.box-oldblog {
-    grid-column: 1 / 4;
+    word-break: break-word;
+    text-align: center;
+    margin-top: 20px;
+    border-bottom: solid 4px white;
+    margin-bottom: 40px;
 }
