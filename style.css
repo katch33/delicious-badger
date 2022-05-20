@@ -1,9 +1,3 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 /* Colour Palette:
  HSL
 --pacific-blue: hsla(186, 71%, 44%, 1);
@@ -13,6 +7,13 @@
 --jet: hsla(330, 2%, 19%, 1);
 */
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
 :root {
     --blue-highlight: hsla(186, 71%, 44%, 1);
     --dark-green-blue: hsla(194, 85%, 21%, 1);
@@ -20,58 +21,28 @@
     --yellow: hsla(40, 100%, 67%, 1);
     --yellow-highlight: #B87A00;
     --dark-jet: hsla(330, 2%, 19%, 1);
-  }
+}
+
 
 body {
     background-color: black;
     font-family: monospace;
     font-size: 16px;
     line-height: 1.6;
+    word-wrap: break-word;
 }
-
 
 [class ^= "box-"] {
     display: grid;
     max-width: 100vw;
-    padding: 40px 15vw;
-    /* border-top: solid 10px var(--dark-jet);
-    border-bottom: solid 10px var(--dark-jet); */
-  }
-
-.container {
-    display: grid;
-    grid-template-columns: 1fr;
-    min-width: 100vw;
-    color: var(--jet);
+    padding: 30px 15vw;
 }
 
-.box-intro {
-    text-align: justify;
-    min-width: fit-content;
+blockquote {
+    color: var(--dark-green-blue);
     background-color: var(--yellow);
-}
-
-#logo {
-    /* color: white; */
-    color: white;
-    text-transform: uppercase;
-    font-size: fit-content;
-    text-shadow: 5px 5px var(--red);
-    font-size: 50px;
-    line-height: unset;
-}
-
-.box-quote {
-    background-color: var(--dark-jet);
-    color: var(--red);
-    text-align: center;
-    min-width: 100vw;
-    padding: 0px 20vw 40px 20vw;
-}
-
-.box-me, .box-tools, .box-learn {
-    text-align: center;
-    background: var(--red);
+    padding: 20px;
+    margin: 25px 0px;
 }
 
 ul {
@@ -89,6 +60,39 @@ a {
     text-decoration: underline;
 }
 
+.spacer {
+    width: 100vw;
+    height: 5px;
+    background-color: var(--dark-jet);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    min-width: fit-content;
+    color: var(--jet);
+}
+
+.box-intro {
+    text-align: justify;
+    min-width: fit-content;
+    background-color: var(--yellow);
+}
+
+.box-quote {
+    background-color: var(--dark-jet);
+    color: var(--red);
+    text-align: center;
+    min-width: 100vw;
+    padding: 0px 20vw 40px 20vw;
+    font-weight: 900;
+}
+
+.box-links {
+    text-align: center;
+    background: var(--red);
+}
+
 a:hover {
     color: var(--blue-highlight);
 }
@@ -104,19 +108,90 @@ a:hover {
     text-transform: uppercase;
     background-color: var(--dark-jet);
     line-height: 4;
+    text-shadow: 5px 5px black;
 }
 
-.text-shadow {
-    text-shadow: 2px 2px var(--dark-jet);
-}
-
-.box-blog {
+#box-blog {
     text-align: justify;
     padding: 25px;
-    min-width: fit-content;
 
     color: var(--yellow);
     line-height: 1.4;
-
+    max-width: 100vw;
     background: var(--dark-green-blue);
+}
+
+#logo {
+    color: white;
+    text-transform: uppercase;
+    font-size: fit-content;
+    text-shadow: 5px 5px var(--red);
+    font-size: 50px;
+    line-height: unset;
+}
+
+@media (min-width: 950px) {
+
+    body {
+        background-color: var(--red);
+    }
+
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .spacer {
+        width: 100%;
+    }
+
+    .box-quote {
+        grid-column: 1/4;
+        background-color: var(--dark-jet);
+        color: var(--red);
+        max-width: 100%;
+        padding: 0px 20vw 40px 20vw;
+        font-weight: 900;
+    }
+
+    .heading-text {
+        grid-column: 1/4;
+        place-content: center;
+        color: white;
+        text-transform: uppercase;
+        background-color: var(--dark-jet);
+        line-height: 4;
+        text-shadow: 5px 5px black;
+    }
+
+    .box-intro {
+        grid-column: 1 / 4;
+        text-align: justify;
+        background-color: var(--yellow);
+    }
+
+    .intro {
+        grid-column: 2 / 3;
+        max-width: 1000px;
+    }
+
+    .box-links {
+        grid-column: 1 / 4;
+        text-align: center;
+        background: var(--red);
+    }
+
+    .spacer {
+        grid-column: 2 / 3;
+    }
+
+    #box-blog {
+        grid-column: 1 / 4;
+    }
+
+    .blog-fill {
+        margin: auto;
+        width: 1000px;
+    }
 }
